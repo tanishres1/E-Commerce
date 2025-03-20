@@ -17,6 +17,12 @@ import java.util.List;
         @Autowired
         private ProductService productService;
 
+
+
+        @GetMapping
+        public String getGithub1(){
+            return "Currently wotking git hub push";
+        }
         // Creating products
         @PostMapping("/add")
         public ResponseEntity<List> addProducts(@RequestBody List<Product> products) {
