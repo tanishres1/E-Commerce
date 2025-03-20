@@ -19,10 +19,6 @@ import java.util.List;
 
 
         @GetMapping
-        public String getGithub(){
-            return "Currently wotking git hub push";
-        }
-        @GetMapping
         public String getGithub1(){
             return "Currently wotking git hub push";
         }
