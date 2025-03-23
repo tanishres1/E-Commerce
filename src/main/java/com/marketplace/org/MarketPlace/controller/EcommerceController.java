@@ -41,11 +41,7 @@ import java.util.List;
         return "Welcome to E-commerce!!!!";
     }
     //Get Product by id
-    @GetMapping("/{id}")
-    public ResponseEntity<Product> getProductById(@PathVariable long id) throws ResourceNotFoundException {
-        Product pid=productService.getProductById(id);
-        return new ResponseEntity(pid,HttpStatus.OK);
-    }
+
     //Update Product by id
     @PutMapping("update/{id}")
     public ResponseEntity<Product> updateProductById(@RequestBody Product product, @PathVariable long id) throws ResourceNotFoundException {
