@@ -49,6 +49,10 @@ import java.util.List;
         return "Welcome to E-commerce!!!!";
     }
         @GetMapping("/msg")
+        public String msg2() {
+            return "Welcome to E-commerce!!!!";
+        }
+        @GetMapping("/msg")
         public String msg1() {
             return "Welcome to E-commerce!!!!";
         }
