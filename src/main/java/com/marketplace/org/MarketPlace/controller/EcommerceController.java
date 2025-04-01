@@ -23,6 +23,8 @@ import java.util.List;
             List<Product> savedProducts = productService.saveProducts(products);
             return ResponseEntity.ok(savedProducts);
         }
+
+
         @GetMapping
         public String getGithub1(){
             return "Currently wotking git hub push";
@@ -45,6 +47,11 @@ import java.util.List;
     public String msg() {
         return "Welcome to E-commerce!!!!";
     }
+
+        @GetMapping("/msg")
+        public String msge() {
+            return "Welcome to E-commerce!!!!";
+        }
     //Get Product by id
 
     //Update Product by id
