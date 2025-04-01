@@ -42,12 +42,16 @@ import java.util.List;
         List<Product> listOfProducts = productService.getAllProducts();
         return new ResponseEntity<>(listOfProducts, HttpStatus.OK);
     }
+
     // Get String message
     @GetMapping("/msg")
     public String msg() {
         return "Welcome to E-commerce!!!!";
     }
-
+        @GetMapping("/msg")
+        public String msg1() {
+            return "Welcome to E-commerce!!!!";
+        }
         @GetMapping("/msg")
         public String msge() {
             return "Welcome to E-commerce!!!!";
