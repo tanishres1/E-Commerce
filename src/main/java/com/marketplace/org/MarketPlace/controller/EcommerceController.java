@@ -19,7 +19,10 @@ import org.springframework.web.bind.annotation.*;
         public String msg() {
             return "new Meesage ";
         }
-
+@GetMapping("/api")
+        public String getMessage(){
+            return "New Meesage api";
+}
 
     }
 
